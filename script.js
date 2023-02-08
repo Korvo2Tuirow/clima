@@ -18,7 +18,7 @@ async function buscarCidade(cidade){
        document.querySelector("#descricao").innerHTML = `Tempo: ${desc}`;
 
        let umidade = dados.main.humidity;
-       document.querySelector("#umidade").innerHTML = `Umidade: ${dados.main.humidity}%` 
+       document.querySelector("#umidade").innerHTML = `Umidade relativa do ar: ${dados.main.humidity}%` 
        
        let img = dados.weather[0].icon;
        document.querySelector("#img").src ="https://openweathermap.org/img/wn/"+img+".png";
