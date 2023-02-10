@@ -7,11 +7,13 @@
 }
 
 body {
-    display: flex;
+    display: grid;
     background-color: #555;
     overflow: hidden;
     height: 100vh;
-    align-items: center;
+    width: 100vw;
+    padding: 5px;
+    place-content: center;
     background-image: url("https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     background-position: center;
   
@@ -20,7 +22,7 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    min-width: 320px;
+    max-width: 320px;
     margin: auto;
     border: 1px solid #fff;
     padding: 20px;
@@ -44,7 +46,7 @@ h2 {
 
 input {
     margin-bottom: 15px;
-    width: 230px;
+    max-width: 230px;
     padding: 3px;
     color: #000;
 
